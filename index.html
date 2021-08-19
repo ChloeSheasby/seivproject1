@@ -6,13 +6,12 @@
 </head>
 
 <body>
-    <!-- in the css file, the menubar can be made to be side to side
-             also need to change these hrefs -->
-    <ul class="menubar">
+    <!-- menubar -->
+    <ul class="menubar main">
         <li><a href="index.html">Home</a></li>
         <li><a href="why.html">Why</a></li>
-        <li><a href="index.html">Careers</a></li>
-        <li><a href="index.html">Tips</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Tips</a></li>
         <li><a href="whatitslike.html">Testimonies</a></li>
     </ul>
 
@@ -21,19 +20,42 @@
         <h3>Learn all about what it's like to be a Computer Science major!</h3>
 
         <!-- in the css file, we can make a menu-item be a paragraph block that can be clicked 
-             probably need to make an onclick event for this with javascript -->
-        <div class="menu-item">
-            <p>Do you want to learn more about <b>why</b> you should be a Computer Science major?</p>
-        </div>
-        <div class="menu-item">
-            <p>Do you want to learn more about the <b>careers</b> you may be interested in?</p>
-        </div>
-        <div class="menu-item">
-            <p>Do you want to learn about some <b>tips</b> to help you be successful?</p>
-        </div>
-        <div class="menu-item">
-            <p>Do you want to hear from other CS students about <b>what it's like</b> to be a Computer Science major?
-            </p>
+        probably need to make an onclick event for this with javascript -->
+        <div class='blockmenu'>
+            <table>
+                <tr>
+                    <td>
+                        <a href="why.html">
+                            <div class="menu-item">
+                                <p>Do you want to learn more about <b>why</b> you should be a Computer Science major?
+                                </p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <div class="menu-item">
+                                <p>Do you want to learn more about the <b>careers</b> you may be interested in?</p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <div class="menu-item">
+                                <p>Do you want to learn about some <b>tips</b> to help you be successful?</p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="whatitslike.html">
+                            <div class="menu-item">
+                                <p>Do you want to hear from other CS students about <b>what it's like</b> to be a
+                                    Computer Science major?</p>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>
