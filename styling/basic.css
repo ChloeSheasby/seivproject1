@@ -27,6 +27,7 @@ a {
     padding: 2%;
 }
 
+
 /*--Navbar--*/
 li > a {
   text-decoration: none;
@@ -41,9 +42,12 @@ ul {
 li {
   display: inline;
   padding: 4%;
-  transition: 1s;
   padding-top: 2%;
   padding-bottom: 2%;
+}  
+
+.main > li {
+  transition: 1s;
 }  
 li:hover {
   display: inline;
@@ -70,6 +74,7 @@ td > a {
   color: #bf9f9e;
 }
 td:hover {
+  transition: 1s;
   background-color: #f0d5d3;
   color: white;
   width: 300px;
@@ -131,3 +136,8 @@ h1 {
     0% {opacity:0;}
     100% {opacity:1;}
   }
+  /*--cool highlight color cuz blue is boring--*/
+  ::-moz-selection,
+::selection {
+    background-color: #575757;
+}
