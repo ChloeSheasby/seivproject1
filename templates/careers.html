@@ -1,29 +1,35 @@
-<!DOCTYPE html>
+z<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../styling/basic.css">
-    </head>
-    <body>
-        <ul class="menubar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="why.html">Why</a></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li><a href="tips.html">Tips</a></li>
-            <li><a href="whatitslike.html">Testimonies</a></li>
-            <li><a href="majors.html">Majors</a></li>
-        </ul>
-        <div class='main-content'>
-            <h1>Career Types and Salaries in CS</h1>
-            <p>Computer Science is a wildly diverse field, as computers are used in almost 
-                all walks of life nowadays. Because of this, it would be impossible for us to 
-                maintain a comprehensive list of all careers in the field. However, we've put 
-                together a list of some of the most prominent careers below:
-            </p>
-            <!--Planning on creating dropdown menus for each career-->
-            <div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="stylesheet" href="../styling/basic.css">
+    <link rel="stylesheet" href="../styling/careers.css">
+</head>
+
+<body>
+    <ul class="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why.html">Why</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="index.html">Tips</a></li>
+        <li><a href="whatitslike.html">Testimonies</a></li>
+        <li><a href="majors.html">Majors</a></li>
+    </ul>
+    <div class='main-content'>
+        <h1>Career Types and Salaries in CS</h1>
+        <p>Computer Science is a wildly diverse field, as computers are used in almost
+            all walks of life nowadays. Because of this, it would be impossible for us to
+            maintain a comprehensive list of all careers in the field. However, we've put
+            together a list of some of the most prominent careers below:
+        </p>
+        <!--Planning on creating dropdown menus for each career-->
+        <div>
+            <button class="accordion">
                 <h2>Software Engineer</h2>
+            </button>
+            <div class="panel">
                 <p>Average Salary: ~$105K/yr
-                <br><br>
+                    <br><br>
                 Overview of Field: <br>
                     Software Engineering is focused on the process of determining the needs of 
                     users, developing a list of problems to solve, and then planning a general 
@@ -32,28 +38,42 @@
                     and make sure every piece fits together. They often work more directly with 
                     clients than other programmers.
                 <br><br>
-                Keywords: <b>Design &nbsp;&nbsp; Class Diagrams &nbsp;&nbsp; Environment &nbsp;&nbsp; Analysis</b></p>
+                    Keywords: <b>Design &nbsp;&nbsp; Class Diagrams &nbsp;&nbsp; Environment &nbsp;&nbsp; Analysis</b>
+                </p>
             </div>
-            <div>
+        </div>
+        <div>
+            <button class="accordion">
                 <h2>Software Developer</h2>
+            </button>
+            <div class='panel'>
                 <p>Average Salary: ~$95K/yr
-                <br><br>
-                Overview of Field: <br>
-                    
-                <br><br>
-                Keywords: <b>Programming &nbsp;&nbsp; Development &nbsp;&nbsp; Coding</b></p>
+                    <br><br>
+                    Overview of Field: <br>
+
+                    <br><br>
+                    Keywords: <b>Programming &nbsp;&nbsp; Development &nbsp;&nbsp; Coding</b></p>
+                </p>
             </div>
-            <div>
+        </div>
+        <div>
+            <button class="accordion">
                 <h2>Game Developer</h2>
+            </button>
+            <div class='panel'>
                 <p>Average Salary: ~$70K/yr
-                <br><br>
-                Overview of Field: <br>
-                    
-                <br><br>
-                Keywords: <b>Modeling &nbsp;&nbsp; Game Engine &nbsp;&nbsp; Prototyping</b></p>
+                    <br><br>
+                    Overview of Field: <br>
+                        
+                    <br><br>
+                    Keywords: <b>Modeling &nbsp;&nbsp; Game Engine &nbsp;&nbsp; Prototyping</b></p>
             </div>
-            <div>
+        </div>
+        <div>
+            <button class="accordion">
                 <h2>Full Stack Developer</h2>
+            </button>
+            <div class='panel'>
                 <p>Average Salary: ~$98K/yr
                 <br><br>
                 Overview of Field: <br>
@@ -61,8 +81,12 @@
                 <br><br>
                 Keywords: <b>Front End &nbsp;&nbsp; Back End &nbsp;&nbsp; SQL &nbsp;&nbsp; Web Dev</b></p>
             </div>
-            <div>
+        </div>
+        <div>
+            <button class="accordion">
                 <h2>Cyber Security Engineer</h2>
+            </button>
+            <div class='panel'>
                 <p>Average Salary: ~$100K/yr
                 <br><br>
                 Overview of Field: <br>
@@ -71,5 +95,22 @@
                 Keywords: <b>Security &nbsp;&nbsp; Cyber Crime &nbsp;&nbsp; Survelliance</b></p>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
 </html>
