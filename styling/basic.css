@@ -145,6 +145,8 @@ li:hover .dropdown-content {
   display: block;
   float: right;
   width: 50%;
+  margin-bottom: 5%;
+  
 }
 
 /*-- for the quotes on the testimonies page --*/
