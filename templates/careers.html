@@ -15,7 +15,7 @@
         <li><a href="tips.html">Tips</a></li>
         <li><a href="whatitslike.html">Testimonies</a></li>
         <li>
-            <a class="dropdown" href="majors.html">Majors &caron;
+            <a class="dropdown" href="majors.html">Majors ▼
                 <div class="dropdown-content">
                     <a href="cs.html">Computer Science</a>
                     <a href="cs-business.html">with Business</a>
@@ -129,16 +129,16 @@
 <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
-    
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        } 
+        var x = this.nextElementSibling;
+        if (x.style.display == "none" || x.style.display == "") {
+           this.classList.add("active");
+           x.style.display = "block";
+         } else {
+           this.classList.remove("active");
+           x.style.display = "none";
+         }
       });
     }
 </script>
