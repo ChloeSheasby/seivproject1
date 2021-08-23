@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="stylesheet" href="../styling/basic.css">
+    <link rel="stylesheet" href="../styling/careers.css">
+</head>
+
+<body>
+    <!-- menubar -->
+    <ul class="menubar main">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why.html">Why</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="whatitslike.html">Testimonies</a></li>
+        <li>
+            <a class="dropdown" href="majors.html">Majors &caron;
+                <div class="dropdown-content">
+                    <a href="cs.html">Computer Science</a>
+                    <a href="cs-business.html">with Business</a>
+                    <a href="cs-cyber.html">with Cybersecurity</a>
+                    <a href="cs-ga.html">with Gaming and Animation</a>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class='main-content'>
+        <h1>Career Types and Salaries in CS</h1>
+        <p>Computer Science is a wildly diverse field, as computers are used in almost
+            all walks of life nowadays. Because of this, it would be impossible for us to
+            maintain a comprehensive list of all careers in the field. However, we've put
+            together a list of some of the most prominent careers below:
+        </p>
+        <!--Planning on creating dropdown menus for each career-->
+        <div>
+            <button class="accordion">
+                <h2>Software Engineer</h2>
+            </button>
+            <div class="panel">
+                <p>Average Salary: ~$105K/yr
+                    <br><br>
+                Overview of Field: <br>
+                    Software Engineering is focused on the process of determining the needs of 
+                    users, developing a list of problems to solve, and then planning a general 
+                    solution for those problems. While all computer scientists do some software 
+                    engineering, it is the job of Software Engineers to oversee the whole process 
+                    and make sure every piece fits together. They often work more directly with 
+                    clients than other programmers.
+                <br><br>
+                    Keywords: <b>Design &nbsp;&nbsp; Class Diagrams &nbsp;&nbsp; Environment &nbsp;&nbsp; Analysis</b>
+                </p>
+            </div>
+        </div>
+        <div>
+            <button class="accordion">
+                <h2>Software Developer</h2>
+            </button>
+            <div class='panel'>
+                <p>Average Salary: ~$95K/yr
+                <br><br>
+                Overview of Field: <br>
+                    The most general type of programmer, Software Developers work at firms 
+                    or for specific companies working on in-house software. While the exact 
+                    work they do varies wildly by project, most of what these developers do is 
+                    in an application programming setting. Whether they are designing tools for 
+                    accountants or construction workers or doctors, software developers create 
+                    software to help people.
+                <br><br>
+                Keywords: <b>Programming &nbsp;&nbsp; Development &nbsp;&nbsp; Coding</b></p>
+                </p>
+            </div>
+        </div>
+        <div>
+            <button class="accordion">
+                <h2>Game Developer</h2>
+            </button>
+            <div class='panel'>
+                <p>Average Salary: ~$70K/yr
+                <br><br>
+                Overview of Field: <br>
+                    A popular field for computer scientists today, Game Developers 
+                    create and implement systems that allow game designers to tell interesting 
+                    stories and explore fun mechanics. From basic mechanics like character 
+                    movement to robust combo attack trees, game devs are there to make these systems 
+                    run fluidly so that the player can focus on the fun.
+                <br><br>
+                Keywords: <b>Modeling &nbsp;&nbsp; Game Engine &nbsp;&nbsp; Prototyping</b></p>
+            </div>
+        </div>
+        <div>
+            <button class="accordion">
+                <h2>Full Stack Developer</h2>
+            </button>
+            <div class='panel'>
+                <p>Average Salary: ~$98K/yr
+                <br><br>
+                Overview of Field: <br>
+                    The name of Full Stack Developers comes from their place in web development. 
+                    These developers work on both the Front End (What your browser sees, HTML/CSS/JavaScript) 
+                    and the Back End (Server/database). These developers use some of the widest arrays of 
+                    languages, as they are working with different pieces of the system. There are also many 
+                    frameworks built specifically to help with web development. These developers put all of 
+                    the pieces of websites together and ensure the whole system works correctly.
+                <br><br>
+                Keywords: <b>Front End &nbsp;&nbsp; Back End &nbsp;&nbsp; SQL &nbsp;&nbsp; Web Dev</b></p>
+            </div>
+        </div>
+        <div>
+            <button class="accordion">
+                <h2>Cyber Security Engineer</h2>
+            </button>
+            <div class='panel'>
+                <p>Average Salary: ~$100K/yr
+                <br><br>
+                Overview of Field: <br>
+                    Cyber security is all about protecting computer systems from unauthorized access, 
+                    whether or not it is malicious or just accidental. Cyber Engineers are focused on 
+                    locating potential vulernabilities in a system and adding fortifications to these 
+                    areas so that hackers can't gain access. Because every industry these days uses 
+                    computers, there is a massive need for people who can ensure that systems are secure 
+                    and working as intended.
+                <br><br>
+                Keywords: <b>Security &nbsp;&nbsp; Cyber Crime &nbsp;&nbsp; Survelliance</b></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        var x = this.nextElementSibling;
+        if (x.style.display == "none" || x.style.display == "") {
+           this.classList.add("active");
+           x.style.display = "block";
+         } else {
+           this.classList.remove("active");
+           x.style.display = "none";
+         }
+      });
+    }
+</script>
+</html>
